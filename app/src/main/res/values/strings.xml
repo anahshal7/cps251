@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Tip Calculator</string>
+    <string name="calculate_tip">CALCULATE TIP</string>
+    <string name="textview">TextView</string>
+    <string name="_15_tip_0_00">15% Tip: $0.00</string>
+    <string name="tip_amounts_will_display_here">Tip amounts will display here</string>
+    <string name="_20_tip_0_00">20% Tip: $0.00</string>
+    <string name="_10_tip_0_00">10% Tip: $0.00</string>
+    <string name="enter_bill_total">Enter Bill Total</string>
+</resources>
