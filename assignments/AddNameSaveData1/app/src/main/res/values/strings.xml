@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AddNameSaveData1</string>
+    <string name="add_name">Add name</string>
+    <string name="no_name_to_display">No name to display</string>
+</resources>
