@@ -19,7 +19,7 @@ abstract class ContactRoomDatabase : RoomDatabase() {
                     INSTANCE = Room.databaseBuilder(
                         context.applicationContext,
                         ContactRoomDatabase::class.java,
-                        "contacts"
+                        "contact_database"
                     ).build()
                 } catch (e: Exception) {
                     // Log or handle the exception

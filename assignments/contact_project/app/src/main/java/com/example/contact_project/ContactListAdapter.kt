@@ -20,9 +20,9 @@ class ContactListAdapter(private val contactItemLayout: Int,
         val phoneText = holder.phoneText
         var id = holder.id
         contactData.let {
-            nameText.text = it!![listPosition].name
-            phoneText.text = it!![listPosition].phoneNumber
-            id = it!![listPosition].id
+            nameText.text = it!![listPosition].contactName
+            phoneText.text = it!![listPosition].contactPhone
+            id = it!![listPosition].contactId
         }
     }
 

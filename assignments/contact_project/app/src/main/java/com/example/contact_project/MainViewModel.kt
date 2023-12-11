@@ -30,7 +30,7 @@ class MainViewModel (application: Application) : AndroidViewModel(application) {
     }
 
     fun deleteContact(contact: Contact) {
-        repository.deleteContact(contact.id)
+        repository.deleteContact(contact.contactId)
     }
 
     fun getSearchResults(): MutableLiveData<List<Contact>> {

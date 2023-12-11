@@ -14,16 +14,16 @@ interface ContactDao {
     @Insert
     fun insertContact(contact: Contact)
 
-    @Query("SELECT * FROM contacts WHERE LOWER(name) LIKE '%' || LOWER(:name) || '%'")
+    @Query("SELECT * FROM contacts WHERE LOWER(contactName) LIKE '%' || LOWER(:name) || '%'")
     fun findContact(name: String): List<Contact>
 
-    @Query("SELECT * FROM contacts ORDER BY name")
+    @Query("SELECT * FROM contacts ORDER BY contactName")
     fun getContactsSortedByNameAsc(): List<Contact>
 
-    @Query("SELECT * FROM contacts ORDER BY name DESC")
+    @Query("SELECT * FROM contacts ORDER BY contactName DESC")
     fun getContactsSortedByNameDesc(): List<Contact>
 
-    @Query("DELETE FROM contacts WHERE id = :id")
+    @Query("DELETE FROM contacts WHERE contactId = :id")
     fun deleteContact(id: Int)
 
 }

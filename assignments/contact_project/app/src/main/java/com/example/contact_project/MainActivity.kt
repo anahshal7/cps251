@@ -44,7 +44,7 @@ class MainActivity : AppCompatActivity(), ContactListAdapter.OnDeleteClickListen
                 Toast.makeText(this, "Phone must not be empty", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
-            val contact = Contact(name = name, phoneNumber = phoneNumber)
+            val contact = Contact(contactName = name, contactPhone = phoneNumber)
             viewModel.insertContact(contact)
             clearFields()
         }
